@@ -29,11 +29,11 @@ jobs:
         run: |
           sed -i "s/image: .*/image: Dockerfile/" action.yml
 
-      - name: generate-snake-game-from-github-contribution-grid
+      - name: generate-snk-game-from-github-contribution-grid
         id: generate-snake
         uses: ./
         with:
-          AnnaCarolMonteiro: platane
+          github_user_name: AnnaCarolMonteiro
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
